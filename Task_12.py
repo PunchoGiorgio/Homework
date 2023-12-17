@@ -43,6 +43,5 @@ while counter < len(movie_titles):
                 file_obj.touch()
                 with open(file_obj, 'w', encoding='UTF-8') as f:
                     f.write('{}'.format(sort_elem['award']))
-                    f.close()
 
     counter += 1
