@@ -26,6 +26,7 @@ while count < len(movie_titles):
         for awards_elem in films_awards
         for result_elem in awards_elem['results']
         if movie_titles[count] == result_elem['movie']["title"])
+
     count += 1
 
 
