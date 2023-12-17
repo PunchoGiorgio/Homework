@@ -34,9 +34,7 @@ for i in awards_lists:
     sorted_lists.append(sorted(i, key=lambda x: x['award_name']))
 
 counter = 0
-
 while counter < len(movie_titles):
-
     for sort_elem in sorted_lists[counter]:
         for walk_elem in list(os.walk(os.getcwd() + '\Harry Potter\{}'.format(movie_titles[counter]))):
             if sort_elem['award_name'][0] == walk_elem[0][-1]:
